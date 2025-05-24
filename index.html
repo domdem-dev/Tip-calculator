@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="title">SPLI<br>TTER</h1>
+
+  <article id="white-container">
+    <section id="input-container">
+      <label for="price" id="bill-label">Bill</label>
+      <div class="input-wrapper" id="first-input-wrapper">
+        <img class="icon" src="./images/icon-dollar.svg" alt="icon">
+        <input type="text" id="first-input" name="price" placeholder="0" />
+      </div>
+
+
+      <p id="select">Select Tip %</p>
+      <section id="tip-buttons-container">
+        <button class="tip-button" id="5" value="5">5%</button>
+        <button class="tip-button" id="10" value="10">10%</button>
+        <button class="tip-button" id="15" value="15">15%</button>
+        <button class="tip-button" id="25" value="25">25%</button>
+        <button class="tip-button" id="50" value="50">50%</button>
+        <input class="tip-button" id="custom-button" type="text" placeholder="Custom">
+      </section>
+
+      <div id="label-wrapper">
+        <label for="people" id="people-label">Number of People</label>
+        <label for="people" id="error-label" class="hidden">Can't be zero</label>
+      </div>
+      <div class="input-wrapper" id="second-input-wrapper">
+        <img class="icon" src="./images/icon-person.svg" alt="icon">
+        <input type="text" id="second-input" name="people" placeholder="0" />
+      </div>
+    </section>
+
+    <section id="result-container">
+      <div class="rows">
+        <div class="generic">
+          <h2>Tip Amount</h2>
+          <h3>/ person</h3>
+        </div>
+        <p class="results" id="tip">$0.00</p>
+      </div>
+      <div class="rows">
+        <div class="generic">
+          <h2>Total</h2>
+          <h3>/ person</h3>
+        </div>
+        <p class="results" id="total">$0.00</p>
+      </div>
+
+      <button id="reset-btn" class="inactive">RESET</button>
+    </section>
+  </article>
+
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/domdem-dev"
+      target="_blank">domdem-dev</a>.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
